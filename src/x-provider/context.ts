@@ -1,14 +1,14 @@
 import { objectType, type AnyObject } from '../_util/type';
-import { AttachmentsProps } from 'ant-design-x-vue/attachments';
-import type { BubbleProps } from 'ant-design-x-vue/bubble';
+import { AttachmentsProps } from '@futuremeng/ant-design-x-vue/attachments';
+import type { BubbleProps } from '@futuremeng/ant-design-x-vue/bubble';
 import { computed, ComputedRef, CSSProperties, defineComponent, inject, InjectionKey, provide, shallowRef, triggerRef, unref, watch } from 'vue';
 import type { ConfigProviderProps as OriAntdConfigProviderProps } from 'ant-design-vue';
-import type { ConversationsProps } from 'ant-design-x-vue/conversations';
-import type { PromptsProps } from 'ant-design-x-vue/prompts';
-import type { SenderProps } from 'ant-design-x-vue/sender';
-import type { SuggestionProps } from 'ant-design-x-vue/suggestion';
-import type { ThoughtChainProps } from 'ant-design-x-vue/thought-chain';
-import type { WelcomeProps } from 'ant-design-x-vue/welcome';
+import type { ConversationsProps } from '@futuremeng/ant-design-x-vue/conversations';
+import type { PromptsProps } from '@futuremeng/ant-design-x-vue/prompts';
+import type { SenderProps } from '@futuremeng/ant-design-x-vue/sender';
+import type { SuggestionProps } from '@futuremeng/ant-design-x-vue/suggestion';
+import type { ThoughtChainProps } from '@futuremeng/ant-design-x-vue/thought-chain';
+import type { WelcomeProps } from '@futuremeng/ant-design-x-vue/welcome';
 
 // refer from the ConfigProviderProps of ant-design-vue
 export interface AntdConfigProviderProps {

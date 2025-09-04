@@ -28,7 +28,7 @@ export function usePlayground({ title, rawSource, path }: Playground) {
     },
     {
       'ant-design-vue': pkgDependencyList['ant-design-vue'],
-      'ant-design-x-vue': pkg.version
+      '@futuremeng/ant-design-x-vue': pkg.version
     },
   ));
 

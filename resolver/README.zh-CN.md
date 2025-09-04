@@ -26,7 +26,7 @@ pnpm add unplugin-vue-components -D
 // vite.config.js
 import vue from '@vitejs/plugin-vue'
 import components from 'unplugin-vue-components/vite'
-import { AntDesignXVueResolver } from 'ant-design-x-vue/resolver';
+import { AntDesignXVueResolver } from '@futuremeng/ant-design-x-vue/resolver';
 import { defineConfig } from 'vite'
 
 export default defineConfig({
@@ -44,7 +44,7 @@ export default defineConfig({
 ```js
 // vue.config.js
 const Components = require('unplugin-vue-components/webpack')
-const { AntDesignXVueResolver } = require('ant-design-x-vue/resolver')
+const { AntDesignXVueResolver } = require('@futuremeng/ant-design-x-vue/resolver')
 
 module.exports = {
   configureWebpack: {

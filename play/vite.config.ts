@@ -16,7 +16,7 @@ export default defineConfig({
   ],
   resolve:{
     alias:{
-      'ant-design-x-vue':path.resolve(__dirname,'../src')
+      '@futuremeng/ant-design-x-vue':path.resolve(__dirname,'../src')
     }
   }
 })

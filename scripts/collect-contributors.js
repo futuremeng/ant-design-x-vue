@@ -419,7 +419,7 @@ export const contributorsData: ContributorsData = ${JSON.stringify(data, null, 2
 
 // 主函数
 async function main() {
-  const collector = new ComponentContributorsCollector('wzc520pyfm', 'ant-design-x-vue')
+  const collector = new ComponentContributorsCollector('wzc520pyfm', '@futuremeng/ant-design-x-vue')
   await collector.collect()
 }
 

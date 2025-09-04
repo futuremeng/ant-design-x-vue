@@ -91,7 +91,7 @@ import { defineConfig } from 'vite';
 
 // add the following dependencies
 import components from 'unplugin-vue-components/vite';
-import { AntDesignXVueResolver } from 'ant-design-x-vue/resolver';
+import { AntDesignXVueResolver } from '@futuremeng/ant-design-x-vue/resolver';
 
 export default defineConfig({
   // ...
@@ -109,7 +109,7 @@ export default defineConfig({
 
 // add the following dependencies
 const Components = require('unplugin-vue-components/webpack');
-const { AntDesignXVueResolver } = require('ant-design-x-vue/resolver');
+const { AntDesignXVueResolver } = require('@futuremeng/ant-design-x-vue/resolver');
 
 module.exports = {
   configureWebpack: {

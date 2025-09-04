@@ -18,7 +18,7 @@ export interface AntDesignXResolverOptions {
   /**
    * rename package
    *
-   * @default 'ant-design-x-vue'
+   * @default '@futuremeng/ant-design-x-vue'
    */
   packageName?: string
 
@@ -54,7 +54,7 @@ function isAntdXVueComponent(name: string) {
 //  componentName: string,
 //  options: AntDesignXResolverOptions = {} 
 // ) {
-//   const { importStyle = true, packageName = 'ant-design-x-vue' } = options
+//   const { importStyle = true, packageName = '@futuremeng/ant-design-x-vue' } = options
 
 //   if (!importStyle) return
 
