@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { UserOutlined } from '@ant-design/icons-vue';
-import { BubbleList } from 'ant-design-x-vue';
+import { BubbleList } from '@futuremeng/ant-design-x-vue';
 import { Button, Flex, Switch } from 'ant-design-vue';
-import type { BubbleListProps, BubbleProps } from 'ant-design-x-vue';
+import type { BubbleListProps, BubbleProps } from '@futuremeng/ant-design-x-vue';
 import type { SwitchProps } from 'ant-design-vue';
 import { ref, h } from 'vue';
 

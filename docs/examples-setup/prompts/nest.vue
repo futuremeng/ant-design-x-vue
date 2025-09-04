@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { CommentOutlined, FireOutlined, HeartOutlined, ReadOutlined, RocketOutlined, SmileOutlined } from '@ant-design/icons-vue';
 import { App, Card, ConfigProvider, Space, theme, message } from 'ant-design-vue';
-import { Prompts, type PromptsProps } from 'ant-design-x-vue';
+import { Prompts, type PromptsProps } from '@futuremeng/ant-design-x-vue';
 import { h } from 'vue';
 
 defineOptions({ name: 'AXPromptsNestSetup' });

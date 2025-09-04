@@ -1,7 +1,7 @@
 <script setup lang="tsx">
 import { CheckCircleOutlined, MoreOutlined } from '@ant-design/icons-vue';
 import { Button, Card, Typography } from 'ant-design-vue';
-import { ThoughtChain, type ThoughtChainItem, type ThoughtChainProps } from 'ant-design-x-vue';
+import { ThoughtChain, type ThoughtChainItem, type ThoughtChainProps } from '@futuremeng/ant-design-x-vue';
 import { cloneVNode, isVNode } from 'vue';
 
 defineOptions({ name: 'AXThoughtChainCustomization' });

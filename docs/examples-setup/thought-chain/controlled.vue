@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { cloneVNode, ref, h } from 'vue';
 import { Card, CheckboxGroup, Space, Typography } from 'ant-design-vue';
-import { ThoughtChain, type ThoughtChainProps } from 'ant-design-x-vue';
+import { ThoughtChain, type ThoughtChainProps } from '@futuremeng/ant-design-x-vue';
 
 defineOptions({ name: 'AXThoughtChainControlledSetup' });
 

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Sender, Suggestion, type SuggestionProps } from 'ant-design-x-vue';
+import { Sender, Suggestion, type SuggestionProps } from '@futuremeng/ant-design-x-vue';
 import { ref } from 'vue';
 
 defineOptions({ name: 'AXSuggestionBlockSetup' });

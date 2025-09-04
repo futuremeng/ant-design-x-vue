@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { Card, Typography } from 'ant-design-vue';
-import { ThoughtChain, type ThoughtChainProps } from 'ant-design-x-vue';
+import { ThoughtChain, type ThoughtChainProps } from '@futuremeng/ant-design-x-vue';
 import { cloneVNode, h } from 'vue';
 
 defineOptions({ name: 'AXThoughtChainCollapsibleSetup' });

@@ -1,7 +1,7 @@
 <script setup lang="tsx">
 import { ref } from 'vue';
-import { Bubble } from 'ant-design-x-vue';
-import type { BubbleProps } from 'ant-design-x-vue';
+import { Bubble } from '@futuremeng/ant-design-x-vue';
+import type { BubbleProps } from '@futuremeng/ant-design-x-vue';
 // import { GPTVis } from '@antv/gpt-vis';
 import { Button, Flex } from 'ant-design-vue';
 

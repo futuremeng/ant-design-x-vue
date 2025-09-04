@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { theme } from 'ant-design-vue';
-import { Conversations } from 'ant-design-x-vue';
-import type { ConversationsProps } from 'ant-design-x-vue';
+import { Conversations } from '@futuremeng/ant-design-x-vue';
+import type { ConversationsProps } from '@futuremeng/ant-design-x-vue';
 import { computed } from 'vue';
 
 defineOptions({ name: 'AXConversationsBasicSetup' });

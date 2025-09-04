@@ -1,6 +1,6 @@
 <script setup lang="tsx">
 import SemanticPreview from '../.vitepress/vitepress/components/semantic/preview.vue'
-import { Sender } from 'ant-design-x-vue'
+import { Sender } from '@futuremeng/ant-design-x-vue'
 import { Flex, Button } from 'ant-design-vue';
 import { SmileOutlined } from '@ant-design/icons-vue'
 

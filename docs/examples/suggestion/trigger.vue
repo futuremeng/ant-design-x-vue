@@ -1,6 +1,6 @@
 <script setup lang="tsx">
 import { Select } from 'ant-design-vue';
-import { Suggestion } from 'ant-design-x-vue';
+import { Suggestion } from '@futuremeng/ant-design-x-vue';
 import { ref } from 'vue';
 
 defineOptions({ name: 'AXSuggestionTrigger' });

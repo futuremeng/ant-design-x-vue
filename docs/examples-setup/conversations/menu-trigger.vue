@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { DeleteOutlined, EditOutlined, PlusSquareOutlined, StopOutlined } from '@ant-design/icons-vue';
-import { Conversations, theme, type ConversationsProps } from 'ant-design-x-vue';
+import { Conversations, theme, type ConversationsProps } from '@futuremeng/ant-design-x-vue';
 import { h } from 'vue';
 
 defineOptions({ name: 'AXConversationsMenuTriggerSetup' });

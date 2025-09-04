@@ -1,6 +1,6 @@
 <script setup lang="tsx">
 import { CopyOutlined, SyncOutlined, UserOutlined } from '@ant-design/icons-vue';
-import { Bubble } from 'ant-design-x-vue';
+import { Bubble } from '@futuremeng/ant-design-x-vue';
 import { App, Button, Space, theme } from 'ant-design-vue';
 import { defineComponent } from 'vue';
 

@@ -1,7 +1,7 @@
 <script setup lang="tsx">
 import { EnterOutlined } from '@ant-design/icons-vue';
 import { App, Flex, Space, Switch, Typography } from 'ant-design-vue';
-import { Sender } from 'ant-design-x-vue';
+import { Sender } from '@futuremeng/ant-design-x-vue';
 import { computed, ref } from 'vue';
 
 defineOptions({ name: 'AXSenderHeaderFixed' });

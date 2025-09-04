@@ -1,7 +1,7 @@
 <script lang="tsx" setup>
 import { UserOutlined } from '@ant-design/icons-vue';
 import { Flex } from 'ant-design-vue';
-import { Bubble, Sender, useXAgent, useXChat } from 'ant-design-x-vue';
+import { Bubble, Sender, useXAgent, useXChat } from '@futuremeng/ant-design-x-vue';
 import { ref, watch } from 'vue';
 
 defineOptions({ name: 'AXUseXChatModel' });

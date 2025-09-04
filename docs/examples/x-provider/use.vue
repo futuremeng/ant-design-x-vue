@@ -1,7 +1,7 @@
 <script setup lang="tsx">
 import { AlipayCircleOutlined, BulbOutlined, CheckCircleOutlined, GithubOutlined, LoadingOutlined, SmileOutlined, UserOutlined } from '@ant-design/icons-vue';
 import { Card, Divider, Flex, Radio, Typography } from 'ant-design-vue';
-import { Bubble, Conversations, Prompts, Sender, Suggestion, ThoughtChain, XProvider, type XProviderProps } from 'ant-design-x-vue';
+import { Bubble, Conversations, Prompts, Sender, Suggestion, ThoughtChain, XProvider, type XProviderProps } from '@futuremeng/ant-design-x-vue';
 import { ref } from 'vue';
 
 defineOptions({ name: 'AXProviderUse' });

@@ -5,9 +5,9 @@ import {
   SyncOutlined,
   UserOutlined,
 } from '@ant-design/icons-vue';
-import { BubbleList } from 'ant-design-x-vue';
+import { BubbleList } from '@futuremeng/ant-design-x-vue';
 import { Button, Flex, Space, Spin } from 'ant-design-vue';
-import type { BubbleListProps } from 'ant-design-x-vue';
+import type { BubbleListProps } from '@futuremeng/ant-design-x-vue';
 import { ref, h } from 'vue';
 
 defineOptions({ name: 'AXBubbleBubbleCustomSetup' });

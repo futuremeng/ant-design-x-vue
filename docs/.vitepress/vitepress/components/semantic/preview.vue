@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { Col, Row, Typography, theme, Tag, Flex } from 'ant-design-vue';
 import { computed, onBeforeUnmount, ref, useTemplateRef, watch } from 'vue';
-import { XProvider } from 'ant-design-x-vue'
+import { XProvider } from '@futuremeng/ant-design-x-vue'
 import { useData } from 'vitepress'
 
 const { semantics, height} = defineProps<{

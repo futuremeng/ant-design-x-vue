@@ -1,6 +1,6 @@
 <script setup lang="tsx">
 import { UserOutlined } from '@ant-design/icons-vue';
-import { Bubble } from 'ant-design-x-vue';
+import { Bubble } from '@futuremeng/ant-design-x-vue';
 import { Button, Flex, Image } from 'ant-design-vue';
 import { ref, type VNode } from 'vue';
 

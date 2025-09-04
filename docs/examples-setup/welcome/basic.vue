@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Welcome } from 'ant-design-x-vue';
+import { Welcome } from '@futuremeng/ant-design-x-vue';
 
 defineOptions({ name: 'AXWelcomeBasicSetup' });
 </script>

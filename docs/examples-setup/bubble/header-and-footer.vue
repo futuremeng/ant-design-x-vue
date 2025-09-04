@@ -4,7 +4,7 @@ import {
   SyncOutlined,
   UserOutlined,
 } from '@ant-design/icons-vue';
-import { Bubble } from 'ant-design-x-vue';
+import { Bubble } from '@futuremeng/ant-design-x-vue';
 import { Button, Space, theme, message as messageAnt } from 'ant-design-vue';
 import { h } from 'vue';
 

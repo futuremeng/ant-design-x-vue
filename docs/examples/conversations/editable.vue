@@ -1,8 +1,8 @@
 <script setup lang="tsx">
 import { EditOutlined } from '@ant-design/icons-vue';
 import { Button, Flex, Input, theme } from 'ant-design-vue';
-import { Conversations } from 'ant-design-x-vue';
-import type { ConversationsProps } from 'ant-design-x-vue';
+import { Conversations } from '@futuremeng/ant-design-x-vue';
+import type { ConversationsProps } from '@futuremeng/ant-design-x-vue';
 import { computed, ref } from 'vue';
 
 defineOptions({ name: 'AXConversationsEditable' });

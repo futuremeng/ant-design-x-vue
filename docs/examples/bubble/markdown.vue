@@ -1,7 +1,7 @@
 <script setup lang="tsx">
 import { UserOutlined } from '@ant-design/icons-vue';
-import { Bubble } from 'ant-design-x-vue';
-import type { BubbleProps } from 'ant-design-x-vue';
+import { Bubble } from '@futuremeng/ant-design-x-vue';
+import type { BubbleProps } from '@futuremeng/ant-design-x-vue';
 import { Typography } from 'ant-design-vue';
 import markdownit from 'markdown-it';
 import { onWatcherCleanup, ref, watchEffect } from 'vue';

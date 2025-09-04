@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { message, Flex } from 'ant-design-vue';
-import { Sender } from 'ant-design-x-vue';
+import { Sender } from '@futuremeng/ant-design-x-vue';
 import { onWatcherCleanup, ref, watch } from 'vue';
 
 defineOptions({ name: 'AXSenderBasicSetup' });

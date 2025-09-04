@@ -5,7 +5,7 @@ import {
   LoadingOutlined,
 } from '@ant-design/icons-vue';
 import { Button, Card } from 'ant-design-vue';
-import { ThoughtChain, type ThoughtChainItem } from 'ant-design-x-vue';
+import { ThoughtChain, type ThoughtChainItem } from '@futuremeng/ant-design-x-vue';
 import { ref, h } from 'vue';
 
 defineOptions({ name: 'AXThoughtChainStatusSetup' });

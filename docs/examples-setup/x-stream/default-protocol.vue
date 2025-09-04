@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { TagsOutlined } from '@ant-design/icons-vue';
 import { Button, Flex } from 'ant-design-vue';
-import { Bubble, ThoughtChain, XStream } from 'ant-design-x-vue';
+import { Bubble, ThoughtChain, XStream } from '@futuremeng/ant-design-x-vue';
 import { computed, ref, h } from 'vue';
 
 defineOptions({ name: 'AXXStreamDefaultProtocolSetup' });

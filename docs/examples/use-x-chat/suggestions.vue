@@ -1,7 +1,7 @@
 <script setup lang="tsx">
 import { SmileOutlined, UserOutlined } from '@ant-design/icons-vue';
 import { Flex } from 'ant-design-vue';
-import { Bubble, Prompts, Sender, useXAgent, useXChat, type BubbleListProps } from 'ant-design-x-vue';
+import { Bubble, Prompts, Sender, useXAgent, useXChat, type BubbleListProps } from '@futuremeng/ant-design-x-vue';
 import { ref } from 'vue';
 
 defineOptions({ name: 'AXUseXChatSuggestions' });

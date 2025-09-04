@@ -1,7 +1,7 @@
 <script setup lang="tsx">
 import { SendOutlined } from '@ant-design/icons-vue';
 import { type ButtonProps, App, Flex, Tooltip } from 'ant-design-vue';
-import { Sender, theme } from 'ant-design-x-vue';
+import { Sender, theme } from '@futuremeng/ant-design-x-vue';
 import { type CSSProperties, onWatcherCleanup, ref, watch } from 'vue';
 
 defineOptions({ name: 'AXSenderSendStyle' });

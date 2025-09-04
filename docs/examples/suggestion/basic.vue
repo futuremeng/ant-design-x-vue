@@ -1,6 +1,6 @@
 <script setup lang="tsx">
 import { RedditOutlined } from '@ant-design/icons-vue';
-import { Sender, Suggestion, type SuggestionProps } from 'ant-design-x-vue';
+import { Sender, Suggestion, type SuggestionProps } from '@futuremeng/ant-design-x-vue';
 import { ref } from 'vue';
 
 defineOptions({ name: 'AXSuggestionBasic' });

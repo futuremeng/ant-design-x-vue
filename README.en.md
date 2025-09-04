@@ -41,7 +41,7 @@ $ pnpm add ant-design-vue ant-design-x-vue
 
 ```html
 <script setup lang="ts">
-import { Bubble, XProvider } from 'ant-design-x-vue';
+import { Bubble, XProvider } from '@futuremeng/ant-design-x-vue';
 </script>
 
 <template>

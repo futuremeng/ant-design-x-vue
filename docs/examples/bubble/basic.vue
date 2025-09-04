@@ -1,5 +1,5 @@
 <script setup lang="tsx">
-import { Bubble } from 'ant-design-x-vue';
+import { Bubble } from '@futuremeng/ant-design-x-vue';
 
 defineOptions({ name: 'AXBubbleBasic' });
 

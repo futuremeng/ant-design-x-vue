@@ -1,7 +1,7 @@
 <script setup lang="tsx">
 import { CloudUploadOutlined } from '@ant-design/icons-vue';
 import { Flex, Segmented, Switch } from 'ant-design-vue';
-import { Attachments, type AttachmentsProps } from 'ant-design-x-vue';
+import { Attachments, type AttachmentsProps } from '@futuremeng/ant-design-x-vue';
 import { ref } from 'vue';
 
 defineOptions({ name: 'AXAttachmentOverflow' });

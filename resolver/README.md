@@ -61,7 +61,7 @@ module.exports = {
 ```html
 <script setup>
 // auto import equal to
-// import { Bubble } from 'ant-design-x-vue'
+// import { Bubble } from '@futuremeng/ant-design-x-vue'
 </script>
 
 <template>

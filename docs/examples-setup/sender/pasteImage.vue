@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { CloudUploadOutlined, LinkOutlined } from '@ant-design/icons-vue';
 import { App, Button, Flex } from 'ant-design-vue';
-import { Attachments, AttachmentsProps, Sender, SenderProps } from 'ant-design-x-vue';
+import { Attachments, AttachmentsProps, Sender, SenderProps } from '@futuremeng/ant-design-x-vue';
 import { ref, h } from 'vue';
 
 defineOptions({ name: 'AXSenderPasteImageSetup' });

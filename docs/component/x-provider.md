@@ -10,7 +10,7 @@
 
 ```diff
 - import { ConfigProvider } from 'ant-design-vue';
-+ import { XProvider } from 'ant-design-x-vue';
++ import { XProvider } from '@futuremeng/ant-design-x-vue';
 
   const App = () => (
 -   <ConfigProvider>

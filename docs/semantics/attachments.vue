@@ -1,6 +1,6 @@
 <script setup lang="tsx">
 import SemanticPreview from '../.vitepress/vitepress/components/semantic/preview.vue'
-import { Attachments, type AttachmentsProps } from 'ant-design-x-vue'
+import { Attachments, type AttachmentsProps } from '@futuremeng/ant-design-x-vue'
 import { Button, Flex, Space } from 'ant-design-vue';
 import {CloudUploadOutlined} from '@ant-design/icons-vue'
 

@@ -132,7 +132,7 @@ module.exports = {
 ```html
 <script setup>
 // auto import equals to
-// import { Bubble as AXBubble } from 'ant-design-x-vue';
+// import { Bubble as AXBubble } from '@futuremeng/ant-design-x-vue';
 </script>
 
 <template>
@@ -160,7 +160,7 @@ import {
   Bubble,
   // 发送框
   Sender,
-} from 'ant-design-x-vue';
+} from '@futuremeng/ant-design-x-vue';
 
 defineOptions({ name: 'SampleChat' });
 

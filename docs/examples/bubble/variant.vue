@@ -1,6 +1,6 @@
 <script setup lang="tsx">
 import { CoffeeOutlined, FireOutlined, SmileOutlined, UserOutlined } from '@ant-design/icons-vue';
-import { Bubble, Prompts, type PromptsProps } from 'ant-design-x-vue';
+import { Bubble, Prompts, type PromptsProps } from '@futuremeng/ant-design-x-vue';
 import { Flex } from 'ant-design-vue';
 
 defineOptions({ name: 'BubbleVariant' });

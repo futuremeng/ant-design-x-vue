@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Bubble, type BubbleProps } from 'ant-design-x-vue';
+import { Bubble, type BubbleProps } from '@futuremeng/ant-design-x-vue';
 import { Flex } from 'ant-design-vue';
 
 defineOptions({ name: 'AXBubbleShapeSetup' });

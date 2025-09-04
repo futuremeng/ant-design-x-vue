@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { AttachmentsProps, BubbleListProps, ConversationsProps, PromptsProps } from 'ant-design-x-vue'
+import type { AttachmentsProps, BubbleListProps, ConversationsProps, PromptsProps } from '@futuremeng/ant-design-x-vue'
 import type { VNode } from 'vue'
 import {
   CloudUploadOutlined,
@@ -23,7 +23,7 @@ import {
   useXAgent,
   useXChat,
   Welcome,
-} from 'ant-design-x-vue'
+} from '@futuremeng/ant-design-x-vue'
 import { computed, h, ref, watch } from 'vue'
 
 const { token } = theme.useToken()

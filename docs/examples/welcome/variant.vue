@@ -1,7 +1,7 @@
 <script setup lang="tsx">
 import { EllipsisOutlined, ShareAltOutlined } from '@ant-design/icons-vue';
 import { Button, Space } from 'ant-design-vue';
-import { Welcome } from 'ant-design-x-vue';
+import { Welcome } from '@futuremeng/ant-design-x-vue';
 
 defineOptions({ name: 'AXWelcomeVariant' });
 

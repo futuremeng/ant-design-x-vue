@@ -3,7 +3,7 @@ import DefaultTheme from 'vitepress/theme'
 import type { Theme } from 'vitepress'
 import './style.css'
 import { computed, h } from 'vue'
-import { theme, XProvider } from 'ant-design-x-vue'
+import { theme, XProvider } from '@futuremeng/ant-design-x-vue'
 import PreferenceSwitch from './components/PreferenceSwitch.vue'
 import { useData } from 'vitepress'
 

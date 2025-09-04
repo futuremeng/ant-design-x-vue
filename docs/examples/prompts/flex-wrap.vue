@@ -1,6 +1,6 @@
 <script setup lang="tsx">
 import { BulbOutlined, CheckCircleOutlined, CoffeeOutlined, FireOutlined, InfoCircleOutlined, RocketOutlined, SmileOutlined, WarningOutlined } from '@ant-design/icons-vue';
-import { Prompts, type PromptsProps } from 'ant-design-x-vue';
+import { Prompts, type PromptsProps } from '@futuremeng/ant-design-x-vue';
 
 
 defineOptions({ name: 'AXPromptsFlexWrap' });

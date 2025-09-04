@@ -1,6 +1,6 @@
 <script setup lang="tsx">
 import SemanticPreview from '../.vitepress/vitepress/components/semantic/preview.vue'
-import { Prompts, type PromptsProps } from 'ant-design-x-vue'
+import { Prompts, type PromptsProps } from '@futuremeng/ant-design-x-vue'
 import { Flex } from 'ant-design-vue';
 import { BulbOutlined, InfoCircleOutlined, RocketOutlined } from '@ant-design/icons-vue'
 

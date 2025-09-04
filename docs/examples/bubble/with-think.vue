@@ -1,7 +1,7 @@
 <script setup lang="tsx">
 import { BulbOutlined, DownOutlined, LoadingOutlined, UpOutlined, UserOutlined } from '@ant-design/icons-vue';
 import { Button, Space, Typography } from 'ant-design-vue';
-import { Bubble, type BubbleProps } from 'ant-design-x-vue';
+import { Bubble, type BubbleProps } from '@futuremeng/ant-design-x-vue';
 import markdownit from 'markdown-it';
 import { ref } from 'vue';
 

@@ -1,7 +1,7 @@
 <script setup lang="tsx">
 import { LoadingOutlined, TagsOutlined } from '@ant-design/icons-vue';
 import { Button, Descriptions, Flex } from 'ant-design-vue';
-import { ThoughtChain, useXAgent, type ThoughtChainItem } from 'ant-design-x-vue';
+import { ThoughtChain, useXAgent, type ThoughtChainItem } from '@futuremeng/ant-design-x-vue';
 import { ref } from 'vue';
 
 defineOptions({ name: 'AXUseXAgentPreset' });

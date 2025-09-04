@@ -7,7 +7,7 @@ import {
   WarningOutlined,
 } from '@ant-design/icons-vue';
 import { message as messageAnt } from 'ant-design-vue';
-import { Prompts, type PromptsProps } from 'ant-design-x-vue';
+import { Prompts, type PromptsProps } from '@futuremeng/ant-design-x-vue';
 import { h } from 'vue';
 
 defineOptions({ name: 'AXPromptsBasicSetup' });

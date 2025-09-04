@@ -1,7 +1,7 @@
 <script setup lang="tsx">
 import { UserOutlined } from '@ant-design/icons-vue';
 import { Flex, Switch } from 'ant-design-vue';
-import { Bubble } from 'ant-design-x-vue';
+import { Bubble } from '@futuremeng/ant-design-x-vue';
 import { ref } from 'vue';
 
 defineOptions({ name: 'BubbleLoading' });

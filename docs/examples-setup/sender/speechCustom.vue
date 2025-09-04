@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { App, message } from 'ant-design-vue';
-import { Sender, SenderProps } from 'ant-design-x-vue';
+import { Sender, SenderProps } from '@futuremeng/ant-design-x-vue';
 import { ref, computed } from 'vue';
 
 defineOptions({ name: 'AXSenderSpeechCustomSetup' });

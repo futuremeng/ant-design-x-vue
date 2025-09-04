@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Bubble } from 'ant-design-x-vue';
+import { Bubble } from '@futuremeng/ant-design-x-vue';
 import { UserOutlined } from '@ant-design/icons-vue';
 import { Flex, Avatar } from 'ant-design-vue';
 import type { CSSProperties } from 'vue';

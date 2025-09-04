@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { Flex } from 'ant-design-vue';
-import { Attachments } from 'ant-design-x-vue';
+import { Attachments } from '@futuremeng/ant-design-x-vue';
 
 defineOptions({ name: 'AXAttachmentFiles' });
 

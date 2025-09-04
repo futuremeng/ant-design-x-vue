@@ -1,6 +1,6 @@
 <script setup lang="tsx">
 import SemanticPreview from '../.vitepress/vitepress/components/semantic/preview.vue'
-import { Welcome } from 'ant-design-x-vue'
+import { Welcome } from '@futuremeng/ant-design-x-vue'
 import { Button, Space } from 'ant-design-vue';
 import {ShareAltOutlined, EllipsisOutlined} from '@ant-design/icons-vue'
 

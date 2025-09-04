@@ -1,7 +1,7 @@
 <script setup lang="tsx">
 import { CloudUploadOutlined, LinkOutlined } from '@ant-design/icons-vue';
 import { App, Button, Flex, Switch } from 'ant-design-vue';
-import { Sender, Attachments } from 'ant-design-x-vue';
+import { Sender, Attachments } from '@futuremeng/ant-design-x-vue';
 import { ref, computed, useTemplateRef } from 'vue';
 
 defineOptions({ name: 'AXAttachmentBasic' });

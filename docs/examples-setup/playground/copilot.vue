@@ -26,7 +26,7 @@ import {
   useXAgent,
   useXChat,
   theme,
-} from 'ant-design-x-vue';
+} from '@futuremeng/ant-design-x-vue';
 import { Button, Image, Popover, Space, Spin, message } from 'ant-design-vue';
 import { ref, watch, onMounted, computed, h } from 'vue';
 

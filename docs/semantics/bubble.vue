@@ -1,6 +1,6 @@
 <script setup lang="tsx">
 import SemanticPreview from '../.vitepress/vitepress/components/semantic/preview.vue'
-import { Bubble } from 'ant-design-x-vue'
+import { Bubble } from '@futuremeng/ant-design-x-vue'
 import { Button, Space, Avatar, theme } from 'ant-design-vue';
 import {UserOutlined, SyncOutlined, CopyOutlined} from '@ant-design/icons-vue'
 

@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { LoadingOutlined, TagsOutlined } from '@ant-design/icons-vue';
 import { Button, Descriptions, Flex } from 'ant-design-vue';
-import { ThoughtChain, type ThoughtChainItem, XRequest } from 'ant-design-x-vue';
+import { ThoughtChain, type ThoughtChainItem, XRequest } from '@futuremeng/ant-design-x-vue';
 import { ref, h } from 'vue';
 
 defineOptions({ name: 'AXXRequestBasicSetup' });

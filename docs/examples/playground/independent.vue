@@ -10,7 +10,7 @@ import {
   Welcome,
   useXAgent,
   useXChat,
-} from 'ant-design-x-vue';
+} from '@futuremeng/ant-design-x-vue';
 import {
   AppstoreAddOutlined,
   AppstoreOutlined,

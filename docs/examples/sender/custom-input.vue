@@ -2,7 +2,7 @@
 import { Input } from 'ant-design-vue';
 import { textAreaProps } from 'ant-design-vue/es/input/inputProps';
 import { triggerFocus } from 'ant-design-vue/es/vc-input/utils/commonUtils';
-import { Sender } from 'ant-design-x-vue';
+import { Sender } from '@futuremeng/ant-design-x-vue';
 import type { InputFocusOptions } from 'ant-design-x-vue/sender/interface';
 import { defineComponent, ref, shallowRef } from 'vue';
 

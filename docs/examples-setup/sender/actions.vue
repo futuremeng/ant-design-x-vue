@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { Space, Spin, Typography, message as messageAnt } from 'ant-design-vue';
-import { Sender } from 'ant-design-x-vue';
+import { Sender } from '@futuremeng/ant-design-x-vue';
 import { onWatcherCleanup, ref, watch, h } from 'vue';
 
 defineOptions({ name: 'AXSenderActionsSetup' });

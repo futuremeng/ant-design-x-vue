@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { Card, ConfigProvider, Flex, theme } from 'ant-design-vue';
-import { Welcome } from 'ant-design-x-vue';
+import { Welcome } from '@futuremeng/ant-design-x-vue';
 
 defineOptions({ name: 'AXWelcomeBackgroundSetup' });
 

@@ -2,7 +2,7 @@
 import { h } from 'vue';
 import { MoreOutlined } from '@ant-design/icons-vue';
 import { Button, Card } from 'ant-design-vue';
-import { ThoughtChain, type ThoughtChainProps } from 'ant-design-x-vue';
+import { ThoughtChain, type ThoughtChainProps } from '@futuremeng/ant-design-x-vue';
 
 defineOptions({ name: 'AXThoughtChainBasic' });
 

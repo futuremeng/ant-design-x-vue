@@ -5,7 +5,7 @@ import {
   ThoughtChain,
   useXAgent,
   type ThoughtChainItem,
-} from 'ant-design-x-vue';
+} from '@futuremeng/ant-design-x-vue';
 import { ref, h } from 'vue';
 
 defineOptions({ name: 'AXUseXAgentPresetSetup' });

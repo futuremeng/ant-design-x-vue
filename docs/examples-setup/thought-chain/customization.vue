@@ -5,7 +5,7 @@ import {
   ThoughtChain,
   type ThoughtChainItem,
   type ThoughtChainProps,
-} from 'ant-design-x-vue';
+} from '@futuremeng/ant-design-x-vue';
 import { cloneVNode, isVNode, h } from 'vue';
 
 defineOptions({ name: 'AXThoughtChainCustomizationSetup' });

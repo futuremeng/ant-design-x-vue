@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { CloudUploadOutlined, LinkOutlined } from '@ant-design/icons-vue';
 import { Button, Flex, theme, Typography, message as messageAnt } from 'ant-design-vue';
-import { Sender } from 'ant-design-x-vue';
+import { Sender } from '@futuremeng/ant-design-x-vue';
 import { ref } from 'vue';
 
 defineOptions({ name: 'AXSenderHeaderSetup' });

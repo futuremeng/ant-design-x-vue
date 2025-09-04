@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { CloudUploadOutlined, LinkOutlined } from '@ant-design/icons-vue';
 import { Button, Flex, Badge, type UploadProps } from 'ant-design-vue';
-import { Attachments, Sender } from 'ant-design-x-vue';
+import { Attachments, Sender } from '@futuremeng/ant-design-x-vue';
 import { computed, ref, h, onUnmounted } from 'vue';
 
 type FileType = Parameters<UploadProps['beforeUpload']>[0];

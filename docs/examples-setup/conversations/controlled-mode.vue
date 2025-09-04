@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { Button, Flex, theme } from 'ant-design-vue';
-import { Conversations, type ConversationsProps } from 'ant-design-x-vue';
+import { Conversations, type ConversationsProps } from '@futuremeng/ant-design-x-vue';
 import { computed, ref } from 'vue';
 
 defineOptions({ name: 'AXConversationsControlledModeSetup' });

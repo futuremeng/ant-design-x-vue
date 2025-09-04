@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { Button, Divider, Form, Input, Typography } from 'ant-design-vue';
-import { useXAgent } from 'ant-design-x-vue';
+import { useXAgent } from '@futuremeng/ant-design-x-vue';
 import { reactive, ref, watch } from 'vue';
 
 type OutputType = string;

@@ -10,7 +10,7 @@
 
 ```diff
 - import { StyleProvider } from 'ant-design-vue';
-+ import { StyleProvider } from 'ant-design-x-vue';
++ import { StyleProvider } from '@futuremeng/ant-design-x-vue';
 
   const App = () => (
     <StyleProvider>

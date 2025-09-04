@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { CloudUploadOutlined, LinkOutlined } from '@ant-design/icons-vue';
 import { message, Button, Flex, Switch, type UploadFile } from 'ant-design-vue';
-import { Attachments, Sender } from 'ant-design-x-vue';
+import { Attachments, Sender } from '@futuremeng/ant-design-x-vue';
 import { computed, h, ref } from 'vue';
 
 defineOptions({ name: 'AXAttachmentBasic' });

@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { CloudUploadOutlined } from '@ant-design/icons-vue';
 import { Button, Flex, Result, theme, Typography } from 'ant-design-vue';
-import { Attachments, type AttachmentsProps } from 'ant-design-x-vue';
+import { Attachments, type AttachmentsProps } from '@futuremeng/ant-design-x-vue';
 import { computed, type CSSProperties, ref } from 'vue';
 
 defineOptions({ name: 'AXAttachmentPlaceHolderSetup' });

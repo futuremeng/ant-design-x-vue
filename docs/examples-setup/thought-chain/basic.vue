@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { MoreOutlined } from '@ant-design/icons-vue';
 import { Button, Card } from 'ant-design-vue';
-import { ThoughtChain, type ThoughtChainProps } from 'ant-design-x-vue';
+import { ThoughtChain, type ThoughtChainProps } from '@futuremeng/ant-design-x-vue';
 import { h } from 'vue';
 
 defineOptions({ name: 'AXThoughtChainBasicSetup' });
