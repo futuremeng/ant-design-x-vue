@@ -19,7 +19,7 @@ export default defineConfig({
     resolve: {
       alias: [
         {
-          find: /^ant-design-x-vue$/,
+          find: /^@futuremeng\/ant-design-x-vue$/,
           replacement: path.resolve(__dirname, '../../src')
         },
         {
