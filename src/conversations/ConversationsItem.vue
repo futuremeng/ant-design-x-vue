@@ -3,7 +3,7 @@ import classnames from 'classnames';
 import type { EventHandler, MouseEventHandler } from 'ant-design-vue/es/_util/EventInterface';
 import type { Conversation, ConversationsItemProps } from './interface';
 import pickAttrs from '../_util/pick-attrs';
-import { computed } from 'vue';
+import { computed, isVNode } from 'vue';
 import { Dropdown, Menu, Tooltip, Typography } from 'ant-design-vue';
 import { EllipsisOutlined } from '@ant-design/icons-vue';
 import useState from '../_util/hooks/use-state';
@@ -92,13 +92,24 @@ defineRender(() => {
     >
       <li {...domProps.value} class={mergedCls.value} onClick={onInternalClick}>
         {info.icon && <div class={`${prefixCls}-icon`}>{info.icon}</div>}
-        <Typography.Text
-          // @ts-expect-error
-          class={`${prefixCls}-label`}
-          ellipsis={{
-            onEllipsis,
-          }}
-        >{info.label}</Typography.Text>
+        {isVNode(info.label) ? (
+          <Typography.Text
+            ellipsis={{
+              onEllipsis,
+            }}
+            {...{ class: `${prefixCls}-label` }}
+          >
+            {info.label}
+          </Typography.Text>
+        ) : (
+          <Typography.Text
+            ellipsis={{
+              onEllipsis,
+            }}
+            {...{ class: `${prefixCls}-label` }}
+            content={info.label}
+          />
+        )}
         {!disabled.value && menu && (
           <Dropdown
             placement={direction === 'rtl' ? 'bottomLeft' : 'bottomRight'}
