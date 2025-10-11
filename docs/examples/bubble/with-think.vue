@@ -70,7 +70,7 @@ defineRender(() => {
               variant="borderless"
               style={{ marginTop: '-24px' }}
               typing
-              content={answerContent}
+              content={answerContent.value}
               messageRender={renderMarkdown}
             />
           </Space>

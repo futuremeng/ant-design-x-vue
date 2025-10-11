@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { AlipayCircleOutlined, BulbOutlined, CheckCircleOutlined, GithubOutlined, LoadingOutlined, SmileOutlined, UserOutlined } from '@ant-design/icons-vue';
-import { Card, Divider, Flex, Radio, Typography } from 'ant-design-vue';
+import { Card, Divider, Flex, Radio, RadioChangeEvent, Typography } from 'ant-design-vue';
 import { Bubble, Conversations, Prompts, Sender, Suggestion, ThoughtChain, XProvider, type XProviderProps } from '@futuremeng/ant-design-x-vue';
 import { ref, h } from 'vue';
 
@@ -9,7 +9,7 @@ defineOptions({ name: 'AXProviderUseSetup' });
 const value = ref('');
 const direction = ref<XProviderProps['direction']>('ltr');
 
-const directionChange = (e: Event) => {
+const directionChange = (e: RadioChangeEvent) => {
   direction.value = (e.target as HTMLInputElement).value as XProviderProps['direction']; 
 }
 
@@ -29,7 +29,7 @@ const conversationItemList = [
 const bubbleItemList = [
   {
     key: '1',
-    placement: 'end',
+    placement: 'end' as const,
     content: 'Hello Ant Design X!',
     avatar: { icon: h(UserOutlined) },
   },
@@ -43,7 +43,6 @@ const bubbleItemList = [
     loading: true,
   },
 ];
-
 const promptItemList = [
   {
     key: '1',
@@ -60,20 +59,20 @@ const promptItemList = [
 const thoughtChainItemList = [
   {
     title: 'Hello Ant Design X!',
-    status: 'success',
+    status: 'success' as const, // 明确类型
     description: 'status: success',
     icon: h(CheckCircleOutlined),
     content: 'Ant Design X help you build AI chat/platform app as ready-to-use 📦.',
   },
   {
     title: 'Hello World!',
-    status: 'success',
+    status: 'success' as const,
     description: 'status: success',
     icon: h(CheckCircleOutlined),
   },
   {
     title: 'Pending...',
-    status: 'pending',
+    status: 'pending' as const,
     description: 'status: pending',
     icon: h(LoadingOutlined),
   },

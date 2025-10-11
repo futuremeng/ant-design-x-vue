@@ -21,11 +21,15 @@ function internalSet<Entity = any, Output = Entity, Value = any>(
     clone = { ...entity } as unknown as Output;
   }
 
-  // Delete prop if `removeIfUndefined` and value is undefined
+  // 修复：增强类型安全，确保 clone 是可索引的
   if (removeIfUndefined && value === undefined && restPath.length === 1) {
-    delete clone[path][restPath[0]];
+    const cloneObj = clone as Record<string | number, any>;
+    if (cloneObj[path] !== undefined) {
+      delete cloneObj[path][restPath[0]];
+    }
   } else {
-    clone[path] = internalSet(clone[path], restPath, value, removeIfUndefined);
+    const cloneObj = clone as Record<string | number, any>;
+    cloneObj[path] = internalSet(cloneObj[path], restPath, value, removeIfUndefined);
   }
 
   return clone;
@@ -37,7 +41,6 @@ export default function set<Entity = any, Output = Entity, Value = any>(
   value: Value,
   removeIfUndefined = false,
 ): Output {
-  // Do nothing if `removeIfUndefined` and parent object not exist
   if (
     paths.length &&
     removeIfUndefined &&

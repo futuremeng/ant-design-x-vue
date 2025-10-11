@@ -150,20 +150,22 @@ function XStream<Output = SSEOutput>(options: XStreamOptions<Output>) {
     throw new Error('The options.readableStream must be an instance of ReadableStream.');
   }
 
-  // Default encoding is `utf-8`
+  // 默认编码为 `utf-8`
   const decoderStream = new TextDecoderStream();
+
+  // 类型断言解决类型不匹配问题
+  const decodedStream = readableStream.pipeThrough(decoderStream as unknown as TransformStream<Uint8Array, string>);
 
   const stream = (
     transformStream
       ? /**
          * Uint8Array binary -> string -> Output
          */
-        readableStream.pipeThrough(decoderStream).pipeThrough(transformStream)
+        decodedStream.pipeThrough(transformStream)
       : /**
          * Uint8Array binary -> string -> SSE part string -> Default Output {@link SSEOutput}
          */
-        readableStream
-          .pipeThrough(decoderStream)
+        decodedStream
           .pipeThrough(splitStream())
           .pipeThrough(splitPart())
   ) as XReadableStream<Output>;

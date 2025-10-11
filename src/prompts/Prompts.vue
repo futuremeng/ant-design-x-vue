@@ -4,7 +4,7 @@ import useStyle from './style';
 import type { PromptsProps } from './interface';
 import { useXProviderContext } from '../x-provider';
 import useXComponentConfig from '../_util/hooks/use-x-component-config';
-import { computed, type VNode } from 'vue';
+import { computed, normalizeStyle, type VNode } from 'vue';
 import { Typography } from 'ant-design-vue';
 import Prompts from '.';
 
@@ -73,11 +73,10 @@ defineRender(() => {
     <div
       {...htmlProps}
       class={mergedCls.value}
-      // @ts-expect-error
-      style={{
-        ...(typeof style === 'object' ? style : {}),
-        ...(typeof contextConfig.value.style === 'object' ? contextConfig.value.style : {}),
-      }}
+      style={normalizeStyle([
+        typeof style === 'object' ? style : {},
+        typeof contextConfig.value.style === 'object' ? contextConfig.value.style : {},
+      ])}
     >
       {/* Title */}
       {titleNode.value && (

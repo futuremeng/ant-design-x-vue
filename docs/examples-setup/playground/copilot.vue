@@ -128,12 +128,12 @@ const { messages, onRequest, setMessages } = useXChat({
     };
   },
   transformMessage: (info) => {
-    const { originMessage, currentMessage } = info || {};
+    const { originMessage, chunk } = info || {};
     let currentContent = '';
     let currentThink = '';
     try {
-      if (currentMessage?.data && !currentMessage?.data.includes('DONE')) {
-        const message = JSON.parse(currentMessage?.data);
+      if (chunk?.data && !chunk?.data.includes('DONE')) {
+        const message = JSON.parse(chunk?.data);
         currentThink = message?.choices?.[0]?.delta?.reasoning_content || '';
         currentContent = message?.choices?.[0]?.delta?.content || '';
       }
@@ -240,7 +240,7 @@ const changeConversation = async (val: string) => {
   try {
     abortController.value?.abort();
   } catch (error) {
-    console.error(error); 
+    console.error(error);
   }
   // The abort execution will trigger an asynchronous requestFallback, which may lead to timing issues.
   // In future versions, the sessionId capability will be added to resolve this problem.
@@ -398,17 +398,17 @@ const copilotOpen = ref<boolean>(true)
 const roles: (typeof Bubble.List)['roles'] = {
   assistant: {
     placement: 'start',
-    footer: h('div', {style:{ display: 'flex' }}, [
-      h('Button', {type: 'text', size: 'small', icon: h(ReloadOutlined), onClick: () => {}}),
-      h('Button', {type: 'text', size: 'small', icon: h(CopyOutlined), onClick: () => {}}),
-      h('Button', {type: 'text', size:'small', icon: h(LikeOutlined), onClick: () => {}}),
-      h('Button', {type: 'text', size:'small', icon: h(DislikeOutlined), onClick: () => {}}),
+    footer: h('div', { style: { display: 'flex' } }, [
+      h('Button', { type: 'text', size: 'small', icon: h(ReloadOutlined), onClick: () => { } }),
+      h('Button', { type: 'text', size: 'small', icon: h(CopyOutlined), onClick: () => { } }),
+      h('Button', { type: 'text', size: 'small', icon: h(LikeOutlined), onClick: () => { } }),
+      h('Button', { type: 'text', size: 'small', icon: h(DislikeOutlined), onClick: () => { } }),
     ]),
     loadingRender: () => h(
       Space,
       {},
       [
-        h(Spin, {size: 'small'}, []),
+        h(Spin, { size: 'small' }, []),
         AGENT_PLACEHOLDER,
       ]
     )
@@ -441,9 +441,7 @@ const roles: (typeof Bubble.List)['roles'] = {
         </div>
       </div>
 
-      <div
-        :style="{ ...workareaStyles.workareaBody, margin: copilotOpen ? '16px' : '16px 48px' }"
-      >
+      <div :style="{ ...workareaStyles.workareaBody, margin: copilotOpen ? '16px' : '16px 48px' }">
         <div :style="workareaStyles.bodyContent">
           <Image
             src="https://mdn.alipayobjects.com/huamei_iwk9zp/afts/img/A*48RLR41kwHIAAAAAAAAAAAAADgCCAQ/fmt.webp"
@@ -512,7 +510,7 @@ const roles: (typeof Bubble.List)['roles'] = {
                 )"
                 :active-key="curSession"
                 groupable
-                :styles="{...styles.conversations, item: { padding: '0 8px' } }"
+                :styles="{ ...styles.conversations, item: { padding: '0 8px' } }"
                 @active-change="changeConversation"
               />
             </template>
@@ -588,10 +586,10 @@ const roles: (typeof Bubble.List)['roles'] = {
           </Button>
         </div>
         <!-- 输入框 -->
-      
+
         <Suggestion
           :items="MOCK_SUGGESTIONS"
-          @select="(itemVal) => inputValue = `[${itemVal}]:`"
+          @select="(itemVal: any) => inputValue = `[${itemVal}]:`"
         >
           <template #default="{ onTrigger, onKeyDown }">
             <Sender
@@ -611,7 +609,7 @@ const roles: (typeof Bubble.List)['roles'] = {
                 try {
                   abortController?.abort();
                 } catch (error) {
-                  console.error(error); 
+                  console.error(error);
                 }
               }"
               @key-down="onKeyDown"
@@ -644,11 +642,11 @@ const roles: (typeof Bubble.List)['roles'] = {
               <template #prefix>
                 <Button
                   type="text"
-                  :icon="h(PaperClipOutlined, {style: { fontSize: '18px' }})"
+                  :icon="h(PaperClipOutlined, { style: { fontSize: '18px' } })"
                   @click="attachmentsOpen = !attachmentsOpen"
                 />
               </template>
-              <template #actions="{info: {components: {SendButton, LoadingButton, SpeechButton}}}">
+              <template #actions="{ info: { components: { SendButton, LoadingButton, SpeechButton } } }">
                 <div :style="{ display: 'flex', alignItems: 'center', gap: 4 }">
                   <component
                     :is="SpeechButton"

@@ -69,7 +69,7 @@ defineRender(() => {
             { name: 'itemContent', desc: '标题项内容' },
           ]}
         >
-        {({ classNames }) => {
+        {({ classNames }: { classNames: Record<string, string> }) => {
           return (
             <Prompts classNames={classNames} title="✨ Inspirational Sparks and Marvelous Tips" items={items} />  
             ) 
@@ -81,7 +81,7 @@ defineRender(() => {
             { name: 'subItem', desc: '子列表项' },
           ]}
         >
-        {({ classNames }) => {
+        {({ classNames }: { classNames: Record<string, string> }) => {
           return (
             <Prompts classNames={classNames} title="✨ Nested Prompts" items={nestItems} />   
           ) 

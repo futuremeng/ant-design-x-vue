@@ -9,6 +9,7 @@ import type { CSSProperties } from 'vue';
 export interface SetStyleOptions {
   element?: HTMLElement;
 }
+
 function setStyle(style: CSSProperties, options: SetStyleOptions = {}): CSSProperties {
   const { element = document.body } = options;
   const oldStyle: CSSProperties = {};
@@ -17,11 +18,16 @@ function setStyle(style: CSSProperties, options: SetStyleOptions = {}): CSSPrope
 
   // IE browser compatible
   styleKeys.forEach(key => {
-    oldStyle[key] = element.style[key];
+    const cssKey = key as keyof CSSProperties;
+    // 将驼峰命名转换为短横线命名
+    const kebabKey = key.replace(/[A-Z]/g, match => `-${match.toLowerCase()}`);
+    oldStyle[cssKey] = element.style.getPropertyValue(kebabKey) as any;
   });
 
   styleKeys.forEach(key => {
-    element.style[key] = style[key];
+    const cssKey = key as keyof CSSProperties;
+    const kebabKey = key.replace(/[A-Z]/g, match => `-${match.toLowerCase()}`);
+    element.style.setProperty(kebabKey, (style[cssKey] as string | null) ?? '');
   });
 
   return oldStyle;

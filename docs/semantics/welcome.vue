@@ -13,7 +13,7 @@ defineRender(() => {
         { name: 'extra', desc: '额外内容' },
       ]}
     >
-     {({ classNames }) => {
+     {({ classNames }: { classNames: Record<string, string> }) => {
        return (
         <Welcome
           classNames={classNames}

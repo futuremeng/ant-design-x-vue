@@ -15,7 +15,7 @@ defineRender(() => {
         { name: 'footer', desc: '底部的容器' },
       ]}
     >
-     {({ classNames }) => {
+     {({ classNames }: { classNames: Record<string, string> }) => {
        return (
         <Bubble
           classNames={classNames}
@@ -23,7 +23,7 @@ defineRender(() => {
           avatar={<Avatar size={32} icon={<UserOutlined />} />}
           header="Ant Design X Vue"
           footer={
-            <Space size={token.paddingXXS}>
+            <Space size={token.value.paddingXXS}>
               <Button type="default" size="small" icon={<SyncOutlined />} />
               <Button type="default" size="small" icon={<CopyOutlined />} />
             </Space>

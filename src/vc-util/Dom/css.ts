@@ -1,6 +1,6 @@
 const PIXEL_PATTERN = /margin|padding|width|height|max|min|offset/;
 
-const removePixel = {
+const removePixel: Record<string, boolean> = {
   left: true,
   top: true,
 };
@@ -10,8 +10,10 @@ const floatMap = {
   float: 1,
 };
 
-function getComputedStyle(node: HTMLElement) {
-  return node.nodeType === 1 ? node.ownerDocument.defaultView.getComputedStyle(node, null) : {};
+function getComputedStyle(node: HTMLElement): CSSStyleDeclaration {
+  return node.nodeType === 1 
+    ? node.ownerDocument.defaultView.getComputedStyle(node, null) 
+    : ({} as CSSStyleDeclaration);
 }
 
 function getStyleValue(node: HTMLElement, type: string, value: string) {
@@ -30,31 +32,41 @@ function getStyleValue(node: HTMLElement, type: string, value: string) {
   return removePixel[type] ? parseFloat(value) || 0 : value;
 }
 
-export function get(node: HTMLElement, name: any) {
+export function get(node: HTMLElement, name: string) {
   const length = arguments.length;
   const style = getComputedStyle(node);
 
-  name = floatMap[name] ? ('cssFloat' in node.style ? 'cssFloat' : 'styleFloat') : name;
+  name = floatMap[name as keyof typeof floatMap] ? ('cssFloat' in node.style ? 'cssFloat' : 'styleFloat') : name;
 
-  return length === 1 ? style : getStyleValue(node, name, style[name] || node.style[name]);
+  return length === 1 ? style : getStyleValue(node, name, style[name as any] || node.style[name as any]);
 }
 
-export function set(node: HTMLElement, name: any, value: string | number) {
+export function set(node: HTMLElement, name: string | Record<string, string | number>, value?: string | number) {
   const length = arguments.length;
-  name = floatMap[name] ? ('cssFloat' in node.style ? 'cssFloat' : 'styleFloat') : name;
-  if (length === 3) {
-    if (typeof value === 'number' && PIXEL_PATTERN.test(name)) {
+
+  if (length === 3 && typeof name === 'string') {
+    let styleName = name;
+    styleName = floatMap[styleName as keyof typeof floatMap] 
+      ? ('cssFloat' in node.style ? 'cssFloat' : 'styleFloat') 
+      : styleName;
+
+    if (typeof value === 'number' && PIXEL_PATTERN.test(styleName)) {
       value = `${value}px`;
     }
-    node.style[name as string] = value; // Number
+    node.style[styleName as any] = value as any;
     return value;
   }
-  for (const x in name) {
-    if (name.hasOwnProperty(x)) {
-      set(node, x, name[x]);
+
+  if (length === 2 && typeof name === 'object' && name !== null) {
+    for (const x in name) {
+      if (name.hasOwnProperty(x)) {
+        set(node, x, name[x]);
+      }
     }
+    return getComputedStyle(node);
   }
-  return getComputedStyle(node);
+
+  throw new Error('Invalid arguments for set function');
 }
 
 export function getOuterWidth(el: HTMLElement) {

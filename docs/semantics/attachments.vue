@@ -19,7 +19,7 @@ defineRender(() => {
             { name: 'placeholder', desc: '占位符' },
           ]}
         >
-        {({ classNames }) => {
+       {({ classNames }: { classNames: Record<string, string> }) => {
           return (
             <Attachments
               classNames={classNames}
@@ -38,7 +38,7 @@ defineRender(() => {
             { name: 'item', desc: '列表项' },
           ]}
         >
-        {({ classNames }) => {
+       {({ classNames }: { classNames: Record<string, string> }) => {
           return (
             <Attachments classNames={classNames} items={items} />     
           ) 

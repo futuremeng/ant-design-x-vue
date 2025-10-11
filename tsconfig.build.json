@@ -14,9 +14,9 @@
     "baseUrl": "./",
     "types": ["unplugin-vue-macros/macros-global", "node"],
     "paths": {
-      "ant-design-x-vue": ["src/index.ts"],
-      "ant-design-x-vue/*": ["src/*"],
-      "ant-design-x-vue/resolver/*": ["src/resolver/*"],
+      "@futuremeng/ant-design-x-vue": ["src/index.ts"],
+      "@futuremeng/ant-design-x-vue/*": ["src/*"],
+      "@futuremeng/ant-design-x-vue/resolver/*": ["src/resolver/*"],
     }
   },
   "vueCompilerOptions": {

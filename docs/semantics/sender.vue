@@ -13,7 +13,7 @@ defineRender(() => {
             { name: 'actions', desc: '操作列表' },
           ]}
         >
-        {({ classNames }) => {
+       {({ classNames }: { classNames: Record<string, string> }) => {
           return (
             <Sender classNames={classNames} prefix={<Button type="text" icon={<SmileOutlined />} />} />
             )
@@ -26,7 +26,7 @@ defineRender(() => {
             { name: 'footer', desc: '尾部' },
           ]}
         >
-        {({ classNames }) => {
+        {({ classNames }: { classNames: Record<string, string> }) => {
           return (
               <Sender
                 classNames={classNames}
