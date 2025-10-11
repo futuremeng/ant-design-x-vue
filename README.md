@@ -31,15 +31,15 @@ Ant Design X For Vue. 🔥 [English](./README.en.md)
 ## 📦 安装
 
 ```bash
-$ npm i ant-design-vue ant-design-x-vue
+$ npm i ant-design-vue @futuremeng/ant-design-x-vue
 ```
 
 ```bash
-$ yarn add ant-design-vue ant-design-x-vue
+$ yarn add ant-design-vue @futuremeng/ant-design-x-vue
 ```
 
 ```bash
-$ pnpm add ant-design-vue ant-design-x-vue
+$ pnpm add ant-design-vue @futuremeng/ant-design-x-vue
 ```
 
 ## 🔨 示例
