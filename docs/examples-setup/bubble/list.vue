@@ -60,18 +60,27 @@ const handleChange = (checked: SwitchProps['checked']) => {
 </script>
 
 <template>
-  <Flex vertical gap="small">
-    <Flex gap="large" align="center">
+  <Flex
+    vertical
+    gap="small"
+  >
+    <Flex
+      gap="large"
+      align="center"
+    >
       Use roles as:
       <Switch
         :checked="useRolesAsFunction"
+        checked-children="Function"
+        un-checked-children="Object"
         @change="handleChange"
-        checkedChildren="Function"
-        unCheckedChildren="Object"
       />
     </Flex>
 
-    <Flex gap="small" :style="{ alignSelf: 'flex-end' }">
+    <Flex
+      gap="small"
+      :style="{ alignSelf: 'flex-end' }"
+    >
       <Button
         @click="
           () => {
