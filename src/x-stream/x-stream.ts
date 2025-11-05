@@ -90,10 +90,21 @@ export type SSEOutput = Partial<Record<SSEFields, any>>;
 function splitPart() {
   return new TransformStream<string, SSEOutput>({
     transform(partChunk, controller) {
+
+      // console.log('partChunk', partChunk)
       // Split the chunk into key-value pairs using the partSeparator
       const lines = partChunk.split(DEFAULT_PART_SEPARATOR);
 
-      const sseEvent = lines.reduce<SSEOutput>((acc, line) => {
+      // console.log('lines', lines)
+
+       // 过滤掉空行
+      const validLines = lines.filter(isValidString);
+
+      // console.log('validLines', validLines)
+
+      const sseEvent = validLines.reduce<SSEOutput>((acc, line) => {
+
+        // console.log('line', line);
         const separatorIndex = line.indexOf(DEFAULT_KV_SEPARATOR);
 
         if (separatorIndex === -1) {
@@ -111,8 +122,12 @@ function splitPart() {
         // Extract the value from the line after the separator
         const value = line.slice(separatorIndex + 1);
 
+        // console.log(key,value)
+
         return { ...acc, [key]: value };
       }, {});
+
+      // console.log('sseEvent',sseEvent)
 
       if (Object.keys(sseEvent).length === 0) return;
 
